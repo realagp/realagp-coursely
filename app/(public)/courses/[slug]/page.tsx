@@ -218,7 +218,7 @@ const ViewCourse = async ({params}:{params: Params}) => {
                   </div>                   
                 </div>
                 <div className="mb-6 space-y-3">
-                  <h4>What's included:</h4>
+                  <h4>What&apos;s included:</h4>
                   <ul className="space-y-2">
                     <li className="flex items-center gap-2 text-sm">
                       <div className="rounded-full p-1 bg-green-700/10 text-green-600">

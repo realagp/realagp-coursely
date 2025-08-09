@@ -84,7 +84,7 @@ const DeleteCourse = () => {
             <Link 
             className={buttonVariants({ variant: "outline"})}
             href={`/admin/courses/`}>
-              <Undo2 className="size-5" />No, I've changed my mind
+              <Undo2 className="size-5" />No, I&apos;ve changed my mind
             </Link>
             </div>
           </CardContent>

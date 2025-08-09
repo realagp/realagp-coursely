@@ -51,10 +51,12 @@ export async function updateUserRole(
     });
 
     return { status: "success", message: "User role updated successfully." };
-  } catch (err: any) {
+  } catch (err: unknown) {
+    let message = "User not found or update failed.";
+    if (err instanceof Error) message = err.message;
     return {
       status: "error",
-      message: err?.message || "User not found or update failed.",
+      message,
     };
   }
 }
@@ -72,10 +74,12 @@ export async function deleteUser(userId: string): Promise<apiResponse> {
     });
 
     return { status: "success", message: "User deleted successfully." };
-  } catch (err: any) {
+  } catch (err: unknown) {
+    let message = "User not found or deletion failed.";
+    if (err instanceof Error) message = err.message;
     return {
       status: "error",
-      message: err?.message || "User not found or deletion failed.",
+      message,
     };
   }
 }

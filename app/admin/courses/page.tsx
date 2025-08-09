@@ -1,4 +1,4 @@
-import { buttonVariants } from "@/components/ui/button"; "@tabler/icons-react";
+import { buttonVariants } from "@/components/ui/button";
 import { PlusCircleIcon } from "lucide-react";
 import Link from "next/link";
 import React, { Suspense } from "react";

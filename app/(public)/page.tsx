@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import GetStarted from "./_components/GetStarted";
+import Image from "next/image";
 
 export const metadata = {
   title: "Coursely | Home",
@@ -52,7 +53,7 @@ export default function Home() {
           <Card key={index} className="hover:shadow-lg transition-shadow">
             <CardHeader>
               <div className="flex items-center space-x-4">
-                <img src={feature.icons} alt={feature.title} className="size-9" />
+                <Image src={feature.icons} alt={feature.title} height={36} width={36} />
                 <CardTitle>{feature.title}</CardTitle>
               </div>
             </CardHeader>

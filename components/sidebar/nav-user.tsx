@@ -2,10 +2,7 @@
 
 import {
   IconDotsVertical,
-  IconLogout,
-  IconHelp,
-  IconSettings,
-  IconBell,  
+  IconLogout, 
 } from "@tabler/icons-react"
 
 import {
@@ -16,7 +13,6 @@ import {
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,

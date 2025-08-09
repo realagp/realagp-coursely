@@ -108,11 +108,13 @@ export async function CreateNewCourse(
       status: "success",
       message: "Course created successfully.",
     };
-  } catch (error: any) {
-    return {
-      status: "error",
-      message:
-        error?.message || "Something went wrong while creating the course.",
-    };
-  }
+    } catch (error: unknown) {
+      return {
+        status: "error",
+        message:
+          error instanceof Error
+            ? error.message
+            : "Something went wrong while creating the course.",
+      };
+    }
 }

@@ -4,7 +4,7 @@ import { buttonVariants } from "@/components/ui/button"
 import { authClient } from "@/lib/auth-client"
 import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
-import React, { use } from "react"
+import React from "react"
 
 const GetStarted = () => {
 

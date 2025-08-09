@@ -55,12 +55,12 @@ export function DeleteUserButton({ userId }: { userId: string }) {
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 items-start">
           {/* left: input */}
           <div>
-            <label className="block text-sm font-medium mb-2">Type <strong>"Confirm"</strong> to enable delete</label>
+            <label className="block text-sm font-medium mb-2">Type <strong>&quot;Confirm&quot;</strong> to enable delete</label>
             <input
               autoFocus
               value={confirmText}
               onChange={(e) => setConfirmText(e.target.value)}
-              placeholder='Type "Confirm"'
+              placeholder="Type &quot;Confirm&quot;"
               className="w-full rounded-md border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-offset-1"
             />
           </div>

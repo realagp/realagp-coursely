@@ -1,5 +1,6 @@
 "use client"
 
+import { SidebarDataType } from "@/app/data/course/get-sidebar-data";
 import { ActiveCoursesType } from "@/app/data/user/enrolled-courses";
 import { Progress } from "@/components/ui/progress";
 import { useCourseProgress } from "@/hooks/use-course-progress";
@@ -11,7 +12,7 @@ interface ActiveCoursesProps {
 
 const CourseProgressData = ({course}: ActiveCoursesProps) => {
 
- const { totalLessons, completedLessons, progressPercentage } = useCourseProgress({data: course.Course as any});
+ const { totalLessons, completedLessons, progressPercentage } = useCourseProgress({data: course.Course as unknown as SidebarDataType["course"]});
  
   return (
     <div className="mt-3 space-y-4">

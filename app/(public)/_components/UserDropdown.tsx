@@ -3,8 +3,6 @@ import {
   LayoutDashboard,
   LogOutIcon,
   Mail,
-  Moon,
-  Sun,
 } from "lucide-react"
 
 import {

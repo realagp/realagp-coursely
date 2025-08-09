@@ -1,6 +1,6 @@
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Check, CheckCircle, Play } from "lucide-react";
+import { CheckCircle, Play } from "lucide-react";
 import Link from "next/link"
 import React from "react"
 

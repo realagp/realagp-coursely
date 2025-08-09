@@ -22,7 +22,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { Loader, Loader2 } from "lucide-react";
+import { Loader } from "lucide-react";
 import { updateUserRole } from "../action";
 import { tryCatch } from "@/hooks/try-catch";
 

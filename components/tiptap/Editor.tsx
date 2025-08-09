@@ -4,20 +4,25 @@ import StarterKit from "@tiptap/starter-kit";
 import Toolbar from "./Toolbar";
 import TextAlign from '@tiptap/extension-text-align'
 
-const Editor = ({field}: {field: any}) => {
+interface EditorField {
+  value: string;
+  onChange: (value: string) => void;
+}
+
+const Editor = ({ field }: { field: EditorField }) => {
 
   const editor = useEditor({
     extensions: [
-        StarterKit,
-        TextAlign.configure({
-            types: ['heading', 'paragraph'],
-        })
+      StarterKit,
+      TextAlign.configure({
+        types: ['heading', 'paragraph'],
+      })
     ],
-    
+
     editorProps: {
-        attributes: {
-            class: "min-h-[300px] p-4 focus:outline-none prose prose-base sm:prose-sm lg:prose-lg xl:prose-xl dark:prose-invert !w-full !max-w-none",
-        }
+      attributes: {
+        class: "min-h-[300px] p-4 focus:outline-none prose prose-base sm:prose-sm lg:prose-lg xl:prose-xl dark:prose-invert !w-full !max-w-none",
+      }
     },
 
     immediatelyRender: false,
@@ -31,10 +36,10 @@ const Editor = ({field}: {field: any}) => {
 
   return (
     <div className="w-full border border-input rounded-md overflow-hidden dark:bg-secondary">
-        <Toolbar editor={editor} />
-        <EditorContent editor={editor} />
+      <Toolbar editor={editor} />
+      <EditorContent editor={editor} />
     </div> 
   )
 }
 
-export default Editor
+export default Editor;

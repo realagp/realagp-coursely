@@ -13,7 +13,7 @@ import { tryCatch } from "@/hooks/try-catch";
 import { Loader2, Trash2 } from "lucide-react";
 import React, { useState, useTransition } from "react"
 import { toast } from "sonner";
-import { deleteChapter, deleteLesson } from "../actions";
+import { deleteChapter } from "../actions";
 
 const DeleteChapter = ({
     chapterId, 

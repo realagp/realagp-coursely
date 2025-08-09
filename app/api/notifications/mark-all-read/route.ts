@@ -1,8 +1,8 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
 import { verifiedUser } from "@/app/data/user/verified-user";
 
-export async function POST(req: NextRequest) {
+export async function POST() {
     
   const session = await verifiedUser();
 
