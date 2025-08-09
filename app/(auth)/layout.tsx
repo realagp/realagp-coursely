@@ -2,8 +2,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React, { ReactNode } from "react"
-import Logo from "@/public/icons/logo.png"; // Adjust the path as necessary
+import React, { ReactNode } from "react" // Adjust the path as necessary
 
 const AuthLayout = ({children}:{children: ReactNode}) => {
   return (
@@ -14,7 +13,7 @@ const AuthLayout = ({children}:{children: ReactNode}) => {
       </Link>
         <div className="flex w-full max-w-sm flex-col gap-6">
           <Link href="/" className="flex items-center self-center font-medium gap-2">
-          <Image src={Logo} alt="logo" height={32} width={32} />
+          <Image src="/icons/logo.png" alt="logo" height={32} width={32} />
             Coursely
           </Link>
           {children}
