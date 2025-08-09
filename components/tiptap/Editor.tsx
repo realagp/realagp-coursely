@@ -5,7 +5,7 @@ import Toolbar from "./Toolbar";
 import TextAlign from '@tiptap/extension-text-align'
 
 interface EditorField {
-  value: string;
+  value?: string;
   onChange: (value: string) => void;
 }
 
