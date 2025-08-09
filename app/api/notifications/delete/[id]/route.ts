@@ -1,8 +1,10 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
 import { verifiedUser } from "@/app/data/user/verified-user";
 
-export async function DELETE({ params }: { params: Promise<{ id: string }>}
+export async function DELETE(
+  _req: NextRequest,
+  { params }: { params: Promise<{ id: string }>}
 ) {
 
   const { id } = await params;
