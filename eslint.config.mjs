@@ -14,7 +14,14 @@ const eslintConfig = [
   {
     rules: {
       "react/no-unescaped-entities": "off",
-      "@typescript-eslint/no-empty-object-type": ["error", { allowObjectTypes: true }],
+      "@typescript-eslint/ban-types": [
+        "error",
+        {
+          types: {
+            "{}": false,
+          },
+        },
+      ],
     },
   },
 ];
