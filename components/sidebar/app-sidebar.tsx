@@ -1,8 +1,6 @@
 "use client"
 
 import * as React from "react"
-
-import Logo from "@/public/icons/logo.png"
 import { NavMain } from "@/components/sidebar/nav-main"
 import { NavUser } from "@/components/sidebar/nav-user"
 import {
@@ -54,7 +52,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
               <Link href="/">
-                <Image src={Logo} alt="logo" className="size-7" />
+                <Image src="/icons/logo.png" alt="logo" height={28} width={28} />
                 <span className="text-base font-semibold">Coursely</span>
               </Link>
             </SidebarMenuButton>
